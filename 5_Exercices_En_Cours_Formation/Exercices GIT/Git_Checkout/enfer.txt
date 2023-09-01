@@ -1,0 +1,3 @@
+lenfer cest les autres
+la tarte aux concombres cest pas bon>> enfer.txt
+echo la tarte aux concombres cest pas bon
