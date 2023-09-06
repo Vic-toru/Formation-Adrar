@@ -1,0 +1,25 @@
+#jv caption {
+    color: purple;
+    font-weight: bolder;
+}
+#jv th {
+    background-color: aqua;
+    border: solid black 2px;
+}
+#jv {
+    border-collapse:collapse;
+    border: double purple 5px;
+    text-align: center;
+    margin: 20px
+}
+#jv tr td{
+    border:solid black 2px;
+}
+#ghibli tr, #ghibli td, #ghibli th {
+    border: solid black 2px
+}
+#ghibli {
+    border-collapse: collapse;
+    margin: 20px;
+    text-align: center;
+}
