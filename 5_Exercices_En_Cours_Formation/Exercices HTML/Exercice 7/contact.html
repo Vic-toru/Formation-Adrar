@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="banniere"><img src="soulcalibur.jpg" alt="Soul Calibur"  width="800px" height="200px"></div> <br/>
+        <br/>
+        <h1>Welcome to Soul Calworld !</h1>
+        <nav><ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="POST" action="fictif.php">
+        <fieldset id="contact">
+            <div>
+                <label for="nom">Nom :<span class="oblig">*</span></label>
+                <input type="name" placeholder="Kilik" minlength="2" maxlength="20" required>
+            </div><br/>
+            <div>
+                <label for="mail">E-mail : <span class="oblig">*</span></label>
+                <input type="mail" placeholder="kilik@gmail.com" required>
+            </div><br/>
+            <div>
+                <label>Votre message :</label><textarea cols="70" rows="10" placeholder="I'll will show you the price of justice !" required></textarea>
+            </div><br/>
+            <div>
+                <label for="copie">envoyer une copie par mail</label>
+                <input type="checkbox">
+            </div><br/>
+            <div>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+    <footer><ul>
+        <li><a href="fictif">Menu 1</a></li>
+        <li><a href="fictif">Menu 2</a></li>
+        <li><a href="fictif">Menu 3</a></li>
+        <li><a href="fictif">Menu 4</a></li>
+    </ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+fieldset {
+    height: 250px;
+    width: 400px;
+    border: solid black 1px;
+    background: rgb(174, 191, 197);
+}
+h1, .bouton {
+    text-align: center;
+    margin-top: 20px;
+}
+.mdp {
+    margin-left: 30px;
+}
+.pseudo {
+    margin-left: 30px;
+}
+label:first-child , 
+label:nth-child(2) {
+    margin-right: 20px;
+}
+.checkbox {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+input[type="submit"]:hover ,
+input[type="button"]:hover {
+    color: white;
+    background: black;
+}

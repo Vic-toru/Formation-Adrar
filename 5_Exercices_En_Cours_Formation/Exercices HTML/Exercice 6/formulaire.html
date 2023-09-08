@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaires</title>
+</head>
+<body>
+    <form method="POST" action="lien" id="form">
+        <fieldset class="blocUn">
+            <legend>Infos personnelles :</legend>
+            <div class="civilite"><label for="monsieur"><input type="radio" name="civilité" value="M.">Monsieur</label>
+            <label for="madame"><input type="radio" name="civilité" value="Mme.">Madame</label></div><br/>
+            <label for="prenom">Prénom :</label>
+            <input type="prenom" id="prenom" name="prenom" placeholder="Ex : Jacques" maxlenght="20" required/><br/>
+            <label for="nom">Nom :</label>
+            <input type="name" id="nom" name="nom" placeholder="Ex : Célère" minlenght="2" maxlenght="20" required/><br/>
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="mail" placeholder="Ex : jaccelere@gamelle.com" required/><br/>
+            <label for="tel">Numéro :</label>
+            <input type="tel" id="tel" name="tel" placeholder="Ex : 0102030405" required/><br/>
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" placeholder="Ex : Pa$$Worud0" minlength="8" maxlength="30" required/><br/>
+            <label for="age">Age :</label>
+            <input type="number" id="age" placeholder="Ex : 31" minlenght="18" required/><br/>
+            <label for="commentaire">Laissez un commentaire :</label><br/>
+            <textarea id="commentaire" placeholder="Validé par la street" rows="10" cols="70" required></textarea><br/>
+            <label for="date">Date de mon commentaire :</label>
+            <input type="date" id="date" placeholder="jj/mm/aaaa" required ><br/>
+            <label for="upload">Ma photo</label>
+            <input type="file" accept=".jpg,.gif,.png" placeholder="Choisir un fichier">
+        </fieldset>
+        <fieldset class="blocDeux">
+            <legend>Vous préférez :</legend>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" checked><br/>
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css"><br/>
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" id="javascript"><br/>
+            <label for="raf">Se beurrer la biscotte</label>
+            <input type="checkbox" id="raf">
+        </fieldset>
+        <fieldset class="blocTrois">
+            <legend>Vous vous levez :</legend>
+            <label for="matin">Matin</label><input type="radio" name="debout" value="matin"><br/>
+            <label for="midi">Midi</label><input type="radio" name="debout" value="midi"><br/>
+            <label for="soir">Soir</label><input type="radio" name="debout" value="soir"><br/>
+            <label for="retard">En retard !</label><input type="radio" name="debout" value="retard"><br/>
+        </fieldset>
+        <fieldset class="blocQuatre">
+            <legend>Fin du formulaire :</legend>
+                <label for="assez">Vous en avez assez ?</label>
+                <select>
+                <optgroup label="Team pas encore">
+                <option value="jenVeuxPlus">J'en veux plus !</option>
+                <option value="cestSuper">C'est super !</option></optgroup>
+                <optgroup label="Team oula">
+                <option value="neymar">Jean Neymar</option>
+                <option value="pitié">Pitié !</option></optgroup>
+            </select><br/>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Reset">
+        </fieldset>
+        
+    </form>
+</body>
+</html>

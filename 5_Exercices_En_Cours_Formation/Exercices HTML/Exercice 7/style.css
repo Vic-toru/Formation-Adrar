@@ -1,0 +1,61 @@
+body {
+    background: radial-gradient(ellipse at top, #CCDAE0 ,#EDF2F4);
+}
+header {
+    text-align: center;
+}
+h1 {
+    color: #EF233C;
+    font-family: Impact;
+    font-size: 4em;;
+    font-weight: bolder;
+}
+h3 {
+    color: #2B2D42;
+    font-size: 2em;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+article {
+    border: solid black 1px;
+}
+.kilik, .cervantes , .hwang {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    border: solid #8D99AE 2px,
+}
+footer {
+    text-align: right;
+}
+ul {
+    list-style-type:none
+}
+a:link {
+    color: #D90429 ;
+}
+a:visited {
+    color: grey;
+}
+a:hover{
+    color: #2B2D42
+}
+.oblig{ 
+    color:red
+}
+.artBlog1 , .artBlog2, .artBlog3 {
+    width: 1000px ;
+    margin: 20px
+}
+.artBlog2 {
+    position:relative;
+    margin-right: auto;
+}
+.artBlog3 {
+    align-content: flex-end;
+}
+.tier {
+    display: flex;
+    text-align: right;
+    margin: 40px;
+}
