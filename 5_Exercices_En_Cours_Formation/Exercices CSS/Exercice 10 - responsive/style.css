@@ -1,0 +1,16 @@
+body {
+    background: lightgray;
+}
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.uno {
+    grid-column: 1;
+}
+.dos {
+    grid-column: 2;
+}
+.tres{
+    grid-column: 3;
+}
