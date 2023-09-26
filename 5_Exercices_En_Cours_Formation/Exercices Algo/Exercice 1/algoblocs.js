@@ -1684,6 +1684,7 @@ function squares(){
         for (let j = 0 ; j < 3 ; j++){
             for (let j = 0 ; j < 4 ; j++){
                 down();
+                 
                 forward(i);
                 arcLeft(i,90);
             }
@@ -1702,4 +1703,13 @@ forward(350);
 shiftColor(-0.3);
 squares();
 */
+
+
+//Exo Bonus 1 
+//Initialisation 
+setPos();
+
+
+//Realisation 
+
 
