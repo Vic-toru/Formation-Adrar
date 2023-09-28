@@ -154,13 +154,11 @@ for (let i = 0 ; i < 10 ; i++){
     if (i%3 ==0 ){
         console.log(i);
     }
+    else if (i%3 == 1){
+        console.log(i+100);
+    }
     else{
-        if (i%3 == 1){
-            console.log(i+100);
-        }
-        else{
-            console.log(i+200);
-        }
+        console.log(i+200);
     }
 }
 
