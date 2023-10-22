@@ -1,0 +1,22 @@
+body {
+    background: lightgray;
+}
+.uno {
+    border: solid black 1px;
+    width: 30%;
+    background: white;
+}
+.dos {
+    border: solid black 1px;
+    width: 30%;
+    background: white;
+}
+.tres{
+    border: solid black 1px;
+    width: 30%;
+    background: white;
+}
+input {
+    color: white;
+    background-color: black;
+}
