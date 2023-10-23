@@ -51,8 +51,10 @@ function addTask(){
     list.appendChild(tasks);
     tasks.setAttribute("class","container");
     const container = document.createElement('p');
-    tasks.appendChild(container);
     const p = document.createElement("input");
+    p.setAttribute("id","delTask");
+    p.setAttribute("onclick","delTask()");
+    tasks.appendChild(container);
     container.textContent = text;
 }
 function delAllTask(){
@@ -63,6 +65,9 @@ function delAllTask(){
 }
 function reload(){
     location.reload();
+}
+function delTask(){
+    const element = document.getElementsByClassName(container);
 }
 
 
