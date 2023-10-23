@@ -244,7 +244,7 @@ Les règles de ce jeu de dès sont les suivantes :
     --Si le joueur fait moins que la banque, ajouter 1 pts au score de la banque.
 -A la fin des 5 tours le gagnant est celui qui a le score le plus élevé.
 -> Afficher le gagnant et son score (nbr de pts).*/
-/*
+
 let bank = 0;
 let player = 0;
 let tour = 0;
@@ -253,19 +253,19 @@ while (tour < 5){
     let diceBank = Math.floor((Math.random()*6)+1);
     let dicePlayer = Math.floor((Math.random()*6)+1);
     if ( diceBank < dicePlayer ){
-        player = player + 1;
-        tour = tour + 1;
+        player++;
+        tour++;
     }
     if ( diceBank > dicePlayer ){
-        bank = bank + 1;
-        tour = tour + 1;
+        bank++;
+        tour++;
     }
     if ( diceBank == dicePlayer ){
-        player = player + 1;
-        bank = bank + 1;
-        tour = tour + 1;
+        player = player + 2;
+        tour++;
     }
 }
+
 if ( bank < player ){
     console.log("Le joueur a gagné avec",`${player}`,"points")
 } if ( bank > player ){
@@ -273,4 +273,3 @@ if ( bank < player ){
 } if ( bank == player ){
     console.log("La banque et le joueur sont à égalité avec",`${bank}`,"points")
 }
-*/
