@@ -18,8 +18,29 @@ const liste = document.querySelector('#tasks');
     container.appendChild(btDelete);
     liste.appendChild(container);
 }*/
-function stock(){
 
+localStorage.setItem("tasks", []);
+localStorage.getItem('tasks') == null ? localStorage.setItem('tasks', []):false;
+
+function addTask(){
+    const valeur = document.querySelector('#task').value;
+    let tab = localStorage.setItem('tasks', valeur);
+    const container = document.createElement('div');
+    container.setAttribute('class', 'container');
+    tab.push(container);
+    const paragraphe = document.createElement('p');
+    paragraphe.textContent = valeur;
+    const btUpdate = document.createElement('button');
+    btUpdate.textContent = "Update";
+    btUpdate.setAttribute('onclick','updateTask(this)');
+    btUpdate.setAttribute('id','update');
+    const btDelete = document.createElement('button');
+    btDelete.textContent = "Delete";
+    btDelete.setAttribute('onclick','deleteTask(this)');
+    container.appendChild(paragraphe);
+    container.appendChild(btUpdate);
+    container.appendChild(btDelete);
+    liste.appendChild(container);
 }
 
 function delAllTask(){
