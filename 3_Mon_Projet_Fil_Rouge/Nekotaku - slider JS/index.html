@@ -26,22 +26,22 @@
       <div class="menu">
       <ul>
         <li>
-          <a href="#Index">Accueil</a>
+          <a href="index.html" class="link">Accueil</a>
         </li>
         <li>
-          <a href="#Librairie">Librairie</a>
+          <a href="#Librairie" class="link">Librairie</a>
         </li>
         <li>
-          <a href="#Questionnaire">Questionnaire</a>
+          <a href="#Questionnaire" class="link">Questionnaire</a>
         </li>
         <li>
-          <a href="#Compte">Compte</a>
+          <a href="#Compte" class="link">Compte</a>
         </li>
         <li>
-          <a href="#Contact">Contact</a>
+          <a href="contact.html" class="link">Contact</a>
         </li>
         <li>
-          <input type="search" placeholder=" Rechercher..." class="search"/>
+          <input type="search" placeholder="  Rechercher..." class="search"/>
         </li>
       </ul>
       </div>
@@ -50,94 +50,73 @@
 
 
       <!-- Carrousel -->
-    <div class="slider">
-
-      <div class="slider_nav">
-
-        <button onclick="previous()" class="slider_nav_button slider_nav_button_previous"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-          </svg>
-        </button>
-
-        <button onclick="next()" class="slider_nav_button slider_nav_button_next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>            
-        </button>
-
-      </div>
-
-      <div class="slider_content">
-
-        <!-- Slide 1 -->
-        <div class="slider_content_item">
-          <div class="slider_pic">
-            <img src="Assets/OPcouv.svg">
-          </div>
-          <div class="slider_description"> 
-            <h2><a href="#" class="slide_title">One Piece</a></h2>
-            <p class="slide_text">Fortune, gloire et pouvoir, c’est ce que possédait Gold Roger, le tout puissant roi des pirates, avant de mourir sur l’échafaud. Mais ses dernières paroles ont éveillées bien des convoitises, et lança la fabuleuse « ère de la piraterie ». Bien des années plus tard, Shanks, un redoutable pirate aux cheveux rouges, rencontre Luffy, un jeune garçon  dans un petit port. Il veut devenir pirate et le rejoindre, mais Shanks lui répond qu’il est trop jeune.</p>
-            <div class="slide_tags">
-              <a href="#"  class="slide_tags_content"> Aventure </a> 
-              <a href="#" class="slide_tags_content"> Action </a> 
-              <a href="#" class="slide_tags_content"> Humour </a>
-            </div>
-              <div class="notation">
-                <img src="Assets/dragonball1.svg" class="db">
-                <img src="Assets/dragonball2.svg" class="db">
-                <img src="Assets/dragonball3.svg" class="db">
-                <img src="Assets/dragonball4.svg" class="db">
-                <img src="Assets/emptyDragonBall.svg" class="db">
+      <section class="carrousel">
+        <div class="container">
+          <div class="card active">
+            <img class="background" src="./assets/KingdomCover 1.svg" alt="">
+            <div class="card_content">
+              <div class="profile_image">
+                <img src="./Assets/kinto.svg" class="cloud_badge">
               </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="slider_content_item">
-          <div class="slider_pic">
-            <img src="Assets/KingdomCover 1.svg">
-          </div>
-          <div class="slider_description">
-            <h2><a href="#" class="slide_title">Kingdom</a></h2>       
-            <p class="slide_text">Au sein du Royaume de Qin vivent deux orphelins, Hyo et Shin. Au beau milieu des champs de bataille, les deux frères espèrent un jour qu’eux aussi, ils pourront servir leur royaume en combattant aux côtés des soldats qu’ils admirent. Alors qu’un jour, les deux orphelins se trouvent séparés, Shin décide de poursuivre son chemin pour devenir un grand général.</p>
-            <div class="slide_tags">
-              <a href="#"  class="slide_tags_content"> Seinen </a> 
-              <a href="#" class="slide_tags_content"> Action </a> 
-              <a href="#" class="slide_tags_content"> Histoire </a>
+    
+              <h3 class="title"><a href="#" class="manga_link">Kingdom</a></h3>
             </div>
-            <p class="notation">
-              <img src="Assets/dragonball1.svg" class="db">
-              <img src="Assets/dragonball2.svg" class="db">
-              <img src="Assets/dragonball3.svg" class="db">
-              <img src="Assets/dragonball4.svg" class="db">
-              <img src="Assets/emptyDragonBall.svg" class="db">
-            </p>
+            <div class="backdrop"></div>
           </div>
-        </div>
-
-          <!-- Slide 3 -->
-        <div class="slider_content_item">
-          <div class="slider_pic">
-            <img src="Assets/DreamlandCover 1.svg">
-          </div>
-            <div class="slider_description">
-              <h2><a href="#" class="slide_title">Dreamland</a></h2>
-              <p class="slide_text">Terrence, un adolescent de 18 ans, est élève en terminale STT au lycée du Mas de Tesse (Jules Guesde).Sa mère est morte dans un incendie alors qu’il n’était âgé que de 7 ans et depuis, il a une peur panique du feu.Mais un soir, alors qu’il rêve de sa mère prisonnière des flammes, il surmonte sa peur en contrôlant le feu.Il rencontre alors un homme mystérieux qui lui annonce qu’il est devenu un Voyageur.</p>
-              <div class="slide_tags">
-                <a href="#"  class="slide_tags_content"> Aventure </a> 
-                <a href="#" class="slide_tags_content"> Fantasy </a> 
-                <a href="#" class="slide_tags_content"> Shonen </a>
+    
+          <div class="card">
+            <img class="background" src="./assets/couvOP.svg" alt="">
+    
+            <div class="card_content">
+              <div class="profile_image">
+                <img src="./Assets/kinto.svg" class="cloud_badge">
               </div>
-              <p class="notation">
-                <img src="Assets/dragonball1.svg" class="db">
-                <img src="Assets/dragonball2.svg" class="db">
-                <img src="Assets/dragonball3.svg" class="db">
-                <img src="Assets/dragonball4.svg" class="db">
-                <img src="Assets/emptyDragonBall.svg" class="db">
-              </p>
+    
+              <h3 class="title"><a href="#" class="manga_link">One Piece</a></h3>
             </div>
+            <div class="backdrop"></div>
+          </div>
+    
+          <div class="card">
+            <img class="background" src="./assets/DreamlandCover 1.svg" alt="">
+    
+            <div class="card_content">
+              <div class="profile_image">
+                <img src="./Assets/kinto.svg" class="cloud_badge">
+              </div>
+    
+              <h3 class="title"><a href="#" class="manga_link">Dreamland</a></h3>
+            </div>
+            <div class="backdrop"></div>
+          </div>
+    
+          <div class="card">
+            <img class="background" src="./assets/VinlandSagaCover 1.svg" alt="">
+    
+            <div class="card_content">
+              <div class="profile_image">
+                <img src="./Assets/kinto.svg" class="cloud_badge">
+              </div>
+    
+              <h3 class="title"><a href="#" class="manga_link">Vinland Saga</a></h3>
+            </div>
+            <div class="backdrop"></div>
+          </div>
+    
+          <div class="card">
+            <img class="background" src="./assets/JJK-Cover 1.svg" alt="">
+    
+            <div class="card_content">
+              <div class="profile_image">
+                <img src="./Assets/kinto.svg" class="cloud_badge">
+              </div>
+    
+              <h3 class="title"><a href="#" class="manga_link">Jujutsu Kaisen</a></h3>
+            </div>
+            <div class="backdrop"></div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
     <div class="second_part">
       <!--Dernières sorties-->

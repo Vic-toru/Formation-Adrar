@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.google.com/specimen/Inter#:~:text=%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A//fonts.googleapis.com%22%3E%0A%3Clink%20rel%3D%22preconnect%22%20href%3D%22https%3A//fonts.gstatic.com%22%20crossorigin%3E%0A%3Clink%20href%3D%22https%3A//fonts.googleapis.com/css2%3Ffamily%3DInter%3Awght%40500%26display%3Dswap%22%20rel%3D%22stylesheet%22%3E">
+  <link rel="stylesheet" href="Style.css">
+  <script src="./Script.js" async></script>
+  <title>Nekotaku - Contactez-nous</title>
+</head>
+
+
+<body>
+
+
+  <!-- Header -->
+  <header>
+    <img src="Assets/Logo.svg" alt="Logo Nekotaku" id="logo" />
+    <h1 class="headTitle">Nekotaku</h1>
+  </header>
+
+
+  <!-- Navigation -->
+  <nav>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#Index">Accueil</a>
+        </li>
+        <li>
+          <a href="#Librairie">Librairie</a>
+        </li>
+        <li>
+          <a href="#Questionnaire">Questionnaire</a>
+        </li>
+        <li>
+          <a href="#Compte">Compte</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+        <li>
+          <input type="search" placeholder=" Rechercher..." class="search" />
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Formulaire -->
+  <section>
+    <form method="post" id="formulaire">
+      <h2>Contactez-nous</h2>
+      <div>
+        <label for="nom">Votre nom : </label>
+        <input type="text" name="nom" placeholder="Exemple : Neko" required>
+      </div>
+      <div>
+        <label for="prenom">Votre prénom : </label>
+        <input type="text" name="prenom" placeholder="Exemple : Taku" required>
+      </div>
+      <div>
+        <label for="mail">Votre email : </label>
+        <input type="email" name="email" placeholder="Exemple : neko@taku.com" required>
+      </div>
+      <label for="message">Votre message : </label>
+      <textarea name="message" placeholder="Écrivez votre message ici" rows="10" cols="100" required></textarea>
+      <input type="submit" value="Envoyer" name="submit" class="bouton_envoyer">
+    </form>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <div class="footer">
+      <div class="copyright">
+        <p>© Nekotaku - Ces oeuvres sont la propriété de leurs éditeurs et auteurs respectifs. Nous vous invitons à les
+          soutenir en achetant les œuvres originales.</p>
+      </div>
+      <div class="nav_footer">
+        <p>
+          <a href="#">Accueil</a>
+        </p>
+        <p>
+          <a href="#">Contact</a>
+        </p>
+        <p>
+          <a href="#">Mentions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,41 +1,13 @@
-/*
+const cardsContainer = document.querySelector(".container");
 
-function next(){
-    const widthSlider = document.querySelector('.slider').offsetWidth;
-    const sliderContent = document.querySelector('.slider_content');
-    sliderContent.scrollLeft += widthSlider;
-}
+cardsContainer.addEventListener("click", (e) => {
+  const target = e.target.closest(".card");
 
-function previous(){
-    const widthSlider = document.querySelector('.slider').offsetWidth;
-    const sliderContent = document.querySelector('.slider_content');
-    sliderContent.scrollLeft -= widthSlider;
-}*/
+  if (!target) return;
 
+  cardsContainer.querySelectorAll(".card").forEach((card) => {
+    card.classList.remove("active");
+  });
 
-
-function previous(){
-    const widthSlider = document.querySelector('.slider').offsetWidth;
-    const sliderContent = document.querySelector('.slider_content');
-    const itemSlider = sliderContent.querySelectorAll('.slider_content_item');
-    const scrollLeft = sliderContent.scrollLeft;
-
-    sliderContent.scrollLeft -= widthSlider;
-
-    if (scrollLeft == 0){
-        sliderContent.scrollLeft = widthSlider * (itemSlider.length -1);
-    }
-}
-
-function next(){
-    const widthSlider = document.querySelector('.slider').offsetWidth;
-    const sliderContent = document.querySelector('.slider_content');
-    const itemSlider = sliderContent.querySelectorAll('.slider_content_item');
-    const scrollLeft = sliderContent.scrollLeft;
-
-    sliderContent.scrollLeft += widthSlider;
-
-    if (scrollLeft == widthSlider * (itemSlider.length - 1)){
-        sliderContent.scrollLeft = 0;
-    }
-}
+  target.classList.add("active");
+});
